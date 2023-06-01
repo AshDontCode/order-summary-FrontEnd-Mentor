@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Ashish | Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body{
+          background-image: url("images/pattern-background-desktop.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          font-family: 'Red Hat Display', sans-serif;
+        }
+      
+        .wrapper{
+          width: 400px;
+          margin: auto;
+          border-radius: 20px;
+          background-color: white;
+          box-shadow: 10px 10px 20px 10px rgb(185, 185, 185);
+          margin-top: 10%;
+
+          
+          }
+          .illustraton img{
+            border-radius: 20px 20px 0px 0px;
+          }
+          .content-container{
+            width:80%; 
+            margin: auto;
+            display:flex;
+            flex-direction: column;
+            gap : 20px;
+            justify-content: center;
+            align-items: center;
+          }
+          .content-container h1{
+              margin: 20px 0px 5px 0px;
+              font-weight: 900;
+          }
+          .content-container p{
+            font-weight: 500;
+            text-align: center;
+            color: rgb(110, 108, 108);
+          }
+          .price-content{
+            display: flex;
+            justify-self: space-between;
+            align-items: center;
+            gap: 10px;
+            background-color: hsla(228, 100%, 98%, 0.807);
+            padding: 15px;
+            border-radius: 20px;
+          }
+
+          #payment-button{
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color:  hsl(245, 75%, 52%);
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: 700;
+            box-shadow: 10px 10px 20px 10px rgb(214, 214, 214);
+          }
+
+          #cancel-button{
+            border: none;
+            background: none;
+            color :  hsl(0, 0%, 44%);
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+          }
+
+          #an-plan{
+            font-weight: 900;
+          }
+
+          .price-content a{
+            font-weight: 700;
+            color:hsl(245, 75%, 52%);
+          }
+  </style>
+</head>
+<body>
+
+
+<div class="wrapper">
+  <div class="illustraton">
+    <img src="images/illustration-hero.svg" alt="listerning Music illustration" width="100%">
+  </div>
+
+  <div class="content-container">
+  
+   <h1> Order Summary</h1>
+
+  <p>   You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+
+  <div class="price-content">
+
+    <img src="images/icon-music.svg" alt="">
+    <div class="price"> 
+      <span id="an-plan"> Annual Plan</span> 
+       <span style="color: gray;">$59.99/year</span> 
+    </div>
+    <a href="">Change</a>  
+  </div>
+
+
+<button id="payment-button">Proceed to Payment</button>
+
+<button id="cancel-button">Cancel Order</button>
+</div>
+
+</div>
+</body>
+</html>
